@@ -1,0 +1,90 @@
+.speech-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .speech-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .speech-input:focus {
+    border-color: #007bff;
+  }
+  
+  .speech-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Centra los botones horizontalmente */
+  }
+  
+  .speech-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .speech-button.send {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .speech-button.send:hover {
+    background-color: #0056b3;
+  }
+  
+  .speech-button.listen {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .speech-button.listen:hover {
+    background-color: #218838;
+  }
+  
+  .speech-button.listening {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .speech-button.listening:hover {
+    background-color: #c82333;
+  }
+  
+  .speech-button.stop {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .speech-button.stop:hover {
+    background-color: #e0a800;
+  }
+  
+  .submitted-text {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+  
+  .submitted-text strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+ 

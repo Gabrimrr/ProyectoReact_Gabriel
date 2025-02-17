@@ -1,0 +1,50 @@
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.componentes-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px; /* Añadido para separar los componentes */
+}
+.group-componentes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.group-componentes:first-child{
+    margin: 0 auto;
+    background-color: rgb(238, 56, 183);
+    padding: 50px;
+    outline: solid;
+}
+
+.group-componentes:nth-child(2){
+    margin: 0 auto;
+    background-color: rgb(113, 230, 109);
+    padding: 50px;
+    outline: solid;
+}
+
+.group-componentes:last-child{
+    margin: 0 auto;
+    background-color: rgb(255, 31, 31);
+    padding: 50px;
+    outline: solid;
+}
+
+.btn-componentes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(119, 119, 255);
+}
+
+.botonCom{
+    background-color: rgb(119, 119, 255);
+}

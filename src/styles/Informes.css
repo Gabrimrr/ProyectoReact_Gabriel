@@ -1,0 +1,81 @@
+.informes-container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(9, 8, 8, 0.3);
+  background-color: var(--form-background-color);
+  color: var(--text-color);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%; /* Ensure the form group takes full width */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);  border-radius: 4px;
+  font-size: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.Boton_Imprimir {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(66, 100, 209);
+  color: white;
+  transition: background-color 0.3s;
+  margin-top: 15px; /* Add some margin to separate from other elements */
+}
+
+.Boton_Imprimir:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.results h3 {
+  margin-bottom: 10px;
+}
+
+.results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.results li {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.Boton_PDF{
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(66, 100, 209);
+  color: white;
+  transition: background-color 0.3s;
+  margin-left: 20px;
+}
+
+

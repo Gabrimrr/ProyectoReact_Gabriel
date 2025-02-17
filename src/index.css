@@ -1,0 +1,254 @@
+root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; /* Color de fondo consistente */
+  --input-background-color: #f0f0f0; /* Light theme input background color */
+  --input-text-color: #413f3f; /* Light theme input text color */
+  --background-color: #ffffff; /* Light theme background color */
+  --text-color: #000000; /* Light theme text color */
+  --button-background-color: #007bff; /* Light theme button background color */
+  --button-text-color: #ffffff; /* Light theme button text color */
+  --button-hover-background-color: #0056b3; /* Light theme button hover background color */
+}
+
+body.dark-mode {
+  --background-color: #242424; /* Dark theme background color */
+  --text-color: #ffffff; /* Dark theme text color */
+  --input-background-color: #3a3a3a; /* Dark theme input background color */
+  --input-text-color: #ffffff; /* Dark theme input text color */
+  --button-background-color: #1a73e8; /* Dark theme button background color */
+  --button-text-color: #ffffff; /* Dark theme button text color */
+  --button-hover-background-color: #0c47a1; /* Dark theme button hover background color */
+  --form-background-color: #494949;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; /* Evita scrollbars */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color); /* Color de fondo consistente */
+  transition: background-color 0.5s, color 0.5s;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite scroll solo si es necesario */
+}
+
+.country-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+div#root {
+  width: 100%;
+  height: 100%;
+}
+
+
+.container-switch {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+body.dark-mode {
+  background-color: #414141;
+  color: #fff;
+}
+
+.Titulo{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+.list-group-item {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.list-group-item img {
+  margin-bottom: 10px;
+}
+
+.listaTitulo{
+  padding-top: 20px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.principal {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color-scheme: light dark;
+
+}
+
+.chat-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /*Posiciona el boton a la derecha*/
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  background-color: rgb(221, 236, 238)
+}
+
+.chat-toggle-button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+body.dark-mode {
+  color: rgba(255, 255, 255, 0.87); /* Text color for dark theme */
+  background-color: #242424; /* Background color for dark theme */
+  --input-background-color: #3a3a3a; /* Dark theme input background color */
+  --input-text-color: #ffffff; /* Dark theme input text color */
+  --button-background-color: #1a73e8; /* Dark theme button background color */
+  --button-hover-background-color: #0c47a1; /* Dark theme button hover background color */
+
+}
+
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+  background-color: var(--input-background-color);
+  color: var(--input-text-color);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+  border-color: var(--button-background-color);
+  outline: none;
+}
